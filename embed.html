@@ -3479,13 +3479,7 @@ body.sakura-drawer-open .sakura-backdrop{opacity:1!important;visibility:visible!
              });
              
              // Search and favourites are handled by the responsive sidebar controller.
-             // Hide channel list on mobile by default
-             if (window.innerWidth <= 768) {
-                 $('.sidebar-channels').addClass('hidden');
-                 $('#toggleChannels').html('<i class="fas fa-bars"></i><span class="btn-text">SHOW CHANNEL</span>');
-             }
-             
-             // Sidebar toggle is now owned by bebas-responsive-controller-v2.
+             // Mobile and desktop sidebar state is handled by bebas-responsive-controller-v2.
              
              $(".channel").click(function(){
                  console.log('ðŸ&#8211;&#177;ï&#184;&#143; Channel clicked!');
